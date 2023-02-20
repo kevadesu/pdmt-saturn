@@ -76,17 +76,18 @@ main() {
 		;;
 		e|export)
 			echo "
-			----------
-			$(date)
-			----------
-			Message marked as: $pdmt_ruleviolation
-			----------
-			Description: $pdmt_desc
-			----------
-			Message link: $pdmt_msglink
-			----------
-			User committing offence: $pdmt_user
-			----------
+----------
+$(date)
+----------
+Message marked as: $pdmt_ruleviolation
+----------
+Description: $pdmt_desc
+----------
+Message link: $pdmt_msglink
+----------
+User committing offence: $pdmt_user
+----------
+Ticket generated with PDMT-SATURN 
 			"
 			echo "Copy the message and send it to your moderation chat or your admin"
 			main
@@ -113,13 +114,13 @@ main() {
 		;;
 		h|help)
 			echo "
-			m/mark - Use this command to mark which rule has been violated in the message
-			l/msglk - Use this command to add the message link in one line (with commas)
-			d/desc - Use this command to add an additional description
-			u/user - Add the username of the person who committed the rule violation
-			e/export - Use this command to export the ticket
-			q/quit - Quit the *P*inoya*D*B *M*oderation *T*ool
-			discard - Discard changes without warning
+m/mark - Use this command to mark which rule has been violated in the message
+l/msglk - Use this command to add the message link in one line (with commas)
+d/desc - Use this command to add an additional description
+u/user - Add the username of the person who committed the rule violation
+e/export - Use this command to export the ticket
+q/quit - Quit the *P*inoya*D*B *M*oderation *T*ool
+discard - Discard changes without warning
 			"
 			main
 		;;
